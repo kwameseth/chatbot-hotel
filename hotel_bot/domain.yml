@@ -7,23 +7,83 @@ intents:
 - greet
 - mood_great
 - mood_unhappy
+
+## hotel_bot_self_service
+- rooms?
+- room_type_single
+- room_type_double
+- stay_night
+- stay_day
+- payment_momo
+- payment_credit_debit_card
+
+
 responses:
   utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  - text: Welcome to Royal Fiesta Self Service.
+          How may I help you?
+
+  utter_rooms?:
+  - text: Okay, we have you covered.
+          What type of room do you prefer? Single or Double
+
+  utter_room_type_single:
+  - text: Single Room price is $20.00 per night.
+          Single Room price for the day is $35.00
+          You prefer a whole day or for the night?
+
+  utter_room_type_double:
+  - text: Double Room price is $40.00 per night.
+          Double Room price for the day is $80.00
+          You prefer a whole day or for the night?
+
+  utter_stay_night:
+  - text: Okay, night it is then.
+          Payment method....
+          Mobile Money or Credit Card?
+
+  utter_stay_day:
+  - text: Okay, day it is then.
+          Payment method....
+          Mobile Money or Credit Card?
+
+  utter_payment_momo:
+  - text: Good!
+          Enter this USSD Prompt *2325# and follow the instructions to make payments.
+          Location, just incase - Dzowulu Junction, Traffic Light.
+          Thank you for patronising our service. Royal Fiesta Hotel, For the ROYALS.
+
+  utter_payment_credit_debit_card:
+  - text: Good!
+          Follow this link https://www.royalhotelpayments.com to complete the payment process.
+          Location, just incase - Dzowulu Junction, Traffic Light.
+          Thank you for patronising our service. Royal Fiesta Hotel, For the ROYALS.
+
+
+
+  # utter_cheer_up:
+  # - text: 'Here is something to cheer you up:'
+  #   image: https://i.imgur.com/nGF1K8f.jpg
+  # utter_did_that_help:
+  # - text: Did that help you?
+  # utter_happy:
+  # - text: Great, carry on!
   utter_goodbye:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 actions:
 - utter_greet
-- utter_happy
+# - utter_happy
+- utter_rooms?
+- utter_room_type_single
+- utter_room_type_double
+- utter_stay_night
+- utter_stay_day
+- utter_payment_momo
+- utter_payment_credit_debit_card

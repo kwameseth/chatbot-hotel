@@ -1,4 +1,4 @@
-version: "3.1"
+version: "3.1" 
 nlu:
 - intent: greet
   examples: |
@@ -15,71 +15,128 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-- intent: goodbye
+    - i need help
+    - who is there?
+    - who's is there?
+
+
+- intent: rooms?
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-- intent: affirm
+    - any room available?
+    - i need a room?
+    - rooms available?
+    - rooms needed
+    - need a room
+    - get me a room.
+
+- intent: room_type_single
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-- intent: deny
+    - single
+    - s
+    - S
+
+- intent: room_type_double
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
+    - double
+    - d
+    - D
+
+- intent: stay_night
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-    - good
-- intent: mood_unhappy
+    - per night
+    - night
+    - for the night
+
+- intent: stay_day
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
+    - day
+    - D
+    - d
+
+- intent: payment_momo
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - momo
+    - mobile money
+    - prefer using mobile money
+    - will use mobile money
+
+
+- intent: payment_credit_debit_card
+  examples: |
+    - debit card
+    - credit card
+    - will use credit card
+    - prefer credit card
+    - i prefer credit card
+
+
+
+
+# - intent: goodbye
+#   examples: |
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+#     - good
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
